@@ -2,7 +2,7 @@
 
 ## Module usage
 
-### Create an aws instance
+### Create an AWS instance
 ```
 resource "aws_instance" "web" {
   ami = "ami-408c7f28"
@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-## Create AMI from EBS of an aws instance. Instance ID is required"
+### Create AMI from an AWS instance. Instance ID is required"
 ```
 module "tf_ami_from_instance" {
   source  = "github.com/cloudposse/tf_ami_from_instance"
