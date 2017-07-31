@@ -1,5 +1,11 @@
-variable "name" { default = "terraform-ami" }
-variable "source_instance_id" {}
-variable "tags" {
-  type    = "map"
+variable "namespace" {
+  default = "test"
 }
+
+variable "stage" {
+  default = "dev"
+}
+
+variable "name" {}
+
+variable "source_instance_id" {}
