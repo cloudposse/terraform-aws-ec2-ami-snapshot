@@ -1,8 +1,6 @@
 # tf_ami_from_instance
 
 ## Module usage
-## Caveats
-* Terraform will only keep the latest AMI snapshot (terraform will delete the previously generated AMI) See our Lamda based solution which avoids this pitfall: https://github.com/cloudposse/tf_lambda_ami_backup
 
 ### Create an AWS instance
 ```
@@ -24,3 +22,7 @@ module "tf_ami_from_instance" {
   }
 }
 ```
+
+## Caveats
+* Terraform will only keep the latest AMI snapshot (terraform will delete the previously generated AMI) See our Lamda based solution which avoids this pitfall: https://github.com/cloudposse/tf_lambda_ami_backup
+* This is is not compatible with autoscaling groups
