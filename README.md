@@ -4,7 +4,7 @@
 
 ### Create an AWS instance
 ```
-resource "aws_instance" "web" {
+resource "aws_instance" "default" {
   ami           = "ami-408c7f28"
   instance_type = "t1.micro"
 
@@ -17,7 +17,7 @@ resource "aws_instance" "web" {
 ### Create AMI from an AWS instance. Instance ID is required"
 ```
 module "tf_ami_from_instance" {
-  source             = "github.com/cloudposse/tf_ami_from_instance"
+  source             = "git::https://github.com/cloudposse/tf_ami_from_instance.git?ref=master"
   name               = "${aws_instance.web.id}"
   source_instance_id = "${aws_instance.web.id}"
   stage              = "${var.stage}"

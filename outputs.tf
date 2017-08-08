@@ -1,3 +1,3 @@
 output "ami_id" {
-  value = "${module.tf_label.id}"
+  value = "${aws_ami_from_instance.default.id}"
 }
