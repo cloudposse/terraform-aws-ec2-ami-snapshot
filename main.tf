@@ -8,7 +8,7 @@ module "tf_label" {
 resource "aws_ami_from_instance" "default" {
   name                    = "${module.tf_label.id}"
   source_instance_id      = "${var.source_instance_id}"
-  snapshot_without_reboot = "true"
+  snapshot_without_reboot = "${var.snapshot_without_reboot}"
   tags                    = "${module.tf_label.tags}"
 
   lifecycle {
