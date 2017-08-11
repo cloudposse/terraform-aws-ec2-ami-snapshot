@@ -1,5 +1,7 @@
-variable "name" { default = "terraform-ami" }
+variable "namespace" {}
+variable "stage" {}
+variable "name" {}
 variable "source_instance_id" {}
-variable "tags" {
-  type    = "map"
+variable "snapshot_without_reboot" {
+  default = "true"
 }
