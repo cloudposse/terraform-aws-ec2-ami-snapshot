@@ -4,7 +4,7 @@ module "label" {
   stage      = "${var.stage}"
   name       = "${var.name}"
   attributes = "${var.attributes}"
-  delimeter  = "${var.delimiter}"
+  delimiter  = "${var.delimiter}"
   tags       = "${var.tags}"
 }
 
