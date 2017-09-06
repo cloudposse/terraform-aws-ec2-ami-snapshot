@@ -7,3 +7,4 @@
 
 # Local values for vars
 terraform.tfvars
+.idea/
