@@ -8,3 +8,6 @@
 # Local values for vars
 terraform.tfvars
 .idea/
+
+.build-harness
+build-harness
