@@ -7,6 +7,7 @@ module "label" {
   delimiter  = var.delimiter
   tags       = var.tags
 }
+  
 
 resource "aws_ami_from_instance" "default" {
   name                    = module.label.id
