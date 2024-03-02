@@ -13,7 +13,7 @@ No requirements.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_label"></a> [label](#module\_label) | git::https://github.com/cloudposse/tf_label.git | 0.2.0 |
+| <a name="module_label"></a> [label](#module\_label) | git::https://github.com/cloudposse/tf_label.git | 0.25.0 |
 
 ## Resources
 
