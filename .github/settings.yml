@@ -5,3 +5,4 @@ repository:
   description: Terraform module to easily generate AMI snapshots to create replica instances
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-module, ami, aws, snapshot, replica, backups
+
